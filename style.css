@@ -1,0 +1,586 @@
+body {
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  background-color: #212529;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+header .imgbox {
+  margin: 30px 0 -11px;
+}
+header .imgbox img {
+  width: 177px;
+}
+header ul {
+  display: flex;
+  float: right;
+}
+header ul li {
+  margin: -13px 19px 0;
+}
+header ul li a {
+  font-size: 20px;
+}
+header ul li a:hover {
+  color: #fdd036;
+}
+@media screen and (max-width: 990px) {
+  header li {
+    display: none;
+  }
+  header .menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 21px 0 16px;
+  }
+  header .menu .imgbox {
+    margin: 8px 0 -11px;
+  }
+  header .menu .box {
+    border: 1px solid #4f5963;
+    width: 106px;
+    height: 49px;
+    border-radius: 4px;
+    display: flex;
+    padding: 12px 0 0 13px;
+  }
+  header .menu .box h3 {
+    font-size: 20px;
+    color: #a0a2a4;
+    font-weight: 700;
+  }
+  header .menu .box .icon {
+    color: #a0a2a4;
+    padding: 0 0 0 5px;
+  }
+}
+
+#welcome {
+  background-image: url(https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+#welcome .textbox {
+  padding: 84px 0 0;
+}
+#welcome .textbox h2 {
+  font-size: 40px;
+  color: #fbfbfb;
+  padding: 90px 0 0;
+}
+#welcome .textbox h1 {
+  font-size: 100px;
+  color: #fbfbfb;
+  font-weight: 700;
+  padding: 17px 0;
+}
+#welcome .textbox .btn {
+  padding: 18px 53px;
+  font-size: 22px;
+  border-radius: 5px;
+  background-color: #ffc800;
+  font-weight: 700;
+  margin: 76px 0 0;
+}
+@media screen and (max-width: 488px) {
+  #welcome {
+    height: 900px;
+  }
+}
+@media screen and (max-width: 394px) {
+  #welcome {
+    height: 974px;
+  }
+}
+
+#services {
+  padding: 50px 0;
+}
+#services h1 {
+  font-weight: 700;
+  font-size: 40px;
+  margin: 0 0 16px;
+}
+#services h3 {
+  font-size: 20px;
+  color: #8b9299;
+  font-weight: 400;
+  padding: 19px 0 44px;
+  line-height: 1.4;
+}
+#services h2 {
+  font-size: 25px;
+  margin: 20px 0 0;
+  font-weight: 700;
+}
+#services .icon {
+  background-color: #ffc800;
+  border-radius: 50%;
+  width: 136px;
+  height: 130px;
+  margin-left: 34%;
+}
+#services .icon i {
+  font-size: 70px;
+  color: white;
+  padding: 29px 0 0;
+}
+@media screen and (max-width: 1399px) {
+  #services .icon {
+    margin-left: 31%;
+  }
+}
+@media screen and (max-width: 1199px) {
+  #services .icon {
+    margin-left: 28%;
+  }
+}
+@media screen and (max-width: 991px) {
+  #services .icon {
+    margin-left: 20%;
+  }
+}
+@media screen and (max-width: 767px) {
+  #services .icon {
+    margin-left: 37%;
+  }
+}
+@media screen and (max-width: 490px) {
+  #services .icon {
+    margin-left: 35%;
+  }
+}
+@media screen and (max-width: 486px) {
+  #services .icon {
+    margin-left: 35%;
+  }
+}
+@media screen and (max-width: 480px) {
+  #services .icon {
+    margin-left: 35%;
+  }
+}
+@media screen and (max-width: 424px) {
+  #services .icon {
+    margin-left: 33%;
+  }
+}
+@media screen and (max-width: 420px) {
+  #services .icon {
+    margin-left: 30%;
+  }
+}
+@media screen and (max-width: 330px) {
+  #services .icon {
+    margin-left: 27%;
+  }
+}
+@media screen and (max-width: 324px) {
+  #services .icon {
+    margin-left: 28%;
+  }
+}
+
+#portfolio {
+  padding: 50px 0;
+  background-color: #f8f9fa;
+}
+#portfolio h1 {
+  font-weight: 700;
+  font-size: 40px;
+}
+#portfolio h3 {
+  font-weight: 300;
+  font-size: 20px;
+  color: #6c757d;
+  margin: 8px 0 58px;
+  line-height: 1.4;
+}
+#portfolio h2 {
+  font-weight: 700;
+  font-size: 25px;
+  padding: 35px 0 0;
+}
+#portfolio h4 {
+  font-weight: 300;
+  font-size: 20px;
+  color: #6c757d;
+  margin: 9px 0 43px;
+  padding: 0 0 23px;
+}
+#portfolio .box {
+  position: relative;
+  display: block;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: white;
+}
+#portfolio .box .portfoliobox {
+  position: absolute;
+  width: 100%;
+  height: 73%;
+  transition: 0.5s;
+  opacity: 0;
+  background-color: #e6b400;
+}
+#portfolio .box .portfoliobox:hover {
+  opacity: 1;
+}
+#portfolio .box .portfoliobox .icon {
+  font-size: 50px;
+  position: absolute;
+  top: 48%;
+  width: 100%;
+  height: 20px;
+  margin-top: -12px;
+  text-align: center;
+  color: white;
+}
+#portfolio .box .portfoliobox .icon i {
+  margin-top: -12px;
+}
+@media screen and (max-width: 1399px) {
+  #portfolio .box .portfoliobox {
+    height: 71%;
+  }
+}
+@media screen and (max-width: 1199px) {
+  #portfolio .box .portfoliobox {
+    height: 67%;
+  }
+}
+@media screen and (max-width: 991px) {
+  #portfolio .box .portfoliobox {
+    height: 59%;
+  }
+}
+@media screen and (max-width: 767px) {
+  #portfolio .box .portfoliobox {
+    height: 73%;
+  }
+}
+@media screen and (max-width: 320px) {
+  #portfolio .box .portfoliobox {
+    height: 67%;
+  }
+}
+
+#about {
+  padding: 50px 0;
+}
+#about h1 {
+  font-weight: 700;
+  font-size: 50px;
+}
+#about h3 {
+  color: #70808d;
+  font-size: 20px;
+  margin: 25px 0 53px;
+}
+#about .box {
+  display: flex;
+  margin: 0 0 150px 100px;
+}
+#about .box .textbox {
+  width: 400px;
+  text-align: end;
+  margin: 0 20px;
+}
+#about .box .textbox h2, #about .box .textbox h4 {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+#about .box .textbox p {
+  font-size: 19px;
+  color: #70808d;
+  line-height: 1.4;
+}
+#about .box .textboxtwo {
+  width: 400px;
+  margin: 0 20px;
+}
+#about .box .textboxtwo h2, #about .box .textboxtwo h4 {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+#about .box .textboxtwo p {
+  font-size: 19px;
+  color: #70808d;
+  line-height: 1.4;
+}
+#about .box .imgbox img {
+  border: 7px solid #edecf1;
+  width: 170px;
+  height: 170px;
+  margin: 0 30px;
+  border-radius: 50%;
+}
+#about .right {
+  margin: 0 90px 150px 0;
+}
+#about .add {
+  display: flex;
+  justify-content: center;
+}
+#about .add .minibox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+}
+#about .add .minibox h5 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+}
+#about .part {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  margin: 0 30px;
+  background-color: #ffc800;
+  color: white;
+  border: 6px solid #edecf1;
+}
+@media screen and (max-width: 1400px) {
+  #about .box {
+    margin: 0 10px 150px 0;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #about .box {
+    margin: 0 -73px 83px 0px;
+  }
+  #about .box .textbox {
+    width: 300px;
+  }
+  #about .box .imgbox .img {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #about .box {
+    margin: 0 15px 100px;
+  }
+  #about .box .textbox {
+    width: 215px;
+  }
+  #about .box .imgbox img {
+    width: 100px;
+    height: 100px;
+  }
+  #about .minibox {
+    padding: 0 20px;
+  }
+  #about .minibox h5 {
+    font-size: 15px;
+  }
+  #about .part {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #about .box {
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    margin-bottom: 70px;
+  }
+  #about .box .textbox {
+    width: 400px;
+    text-align: start;
+  }
+  #about .box .imgbox img {
+    width: 140px;
+    height: auto;
+    margin: 0;
+  }
+  #about .right {
+    flex-direction: row;
+  }
+  #about .right .textbox {
+    text-align: start;
+  }
+  #about .add {
+    justify-content: flex-start;
+  }
+  #about .add .part {
+    width: 130px;
+    height: 130px;
+    padding: 0 30px;
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #about .text-center h1 {
+    font-size: 40px;
+  }
+  #about .box .imgbox img {
+    width: 100px;
+    height: auto;
+  }
+  #about .add .part {
+    width: 100px;
+    height: 100px;
+    padding: 0 15px;
+  }
+  #about .add .part h5 {
+    font-size: 15px;
+  }
+}
+
+#team .textbox h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+#team .textbox h3 {
+  color: #6e7b89;
+  font-size: 20px;
+  padding: 11px 0 58px;
+}
+#team .textbox h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+#team .imgbox {
+  margin: 35px 0;
+  display: flex;
+  justify-content: center;
+}
+#team .imgbox img {
+  width: 221px;
+  height: 215px;
+  border-radius: 120px;
+  border: 7px solid #e9ecef;
+}
+#team ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#team ul li {
+  margin: -29px 10px 5px;
+  border-radius: 50%;
+  background-color: #000000;
+  padding: 20px;
+  width: 10px;
+  height: 10px;
+}
+#team ul li .icon {
+  margin: -7px;
+  color: white;
+}
+#team h6 {
+  color: #6e7b89;
+  font-size: 20px;
+  margin: 45px 205px;
+}
+
+#microsoft .imgbox {
+  margin: 76px 43px;
+}
+#microsoft .imgbox img {
+  width: 176px;
+  margin: 0 68px;
+}
+
+#contact {
+  background-image: url(https://startbootstrap.github.io/startbootstrap-agency/assets/img/map-image.png);
+  background-color: #212529;
+  height: 771px;
+  width: 2061px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 9px;
+  right: 54px;
+  z-index: -1;
+}
+#contact .textbox h1 {
+  font-size: 45px;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 150px 0 0;
+}
+#contact .textbox h3 {
+  color: #6e7b89;
+  font-size: 20px;
+  padding: 11px 0 58px;
+}
+#contact .add {
+  display: flex;
+  flex-direction: column;
+}
+#contact .add input {
+  margin: 15px 188px;
+  padding: 21px 22px;
+  font-size: 20px;
+  color: #ced4da;
+  font-weight: 700;
+  position: relative;
+  left: 172px;
+  top: -12px;
+  z-index: -1;
+}
+#contact input {
+  padding: 122px 226px;
+  font-size: 20px;
+  color: #ced4da;
+  font-weight: 700;
+}
+#contact .btn {
+  padding: 18px 53px;
+  font-size: 22px;
+  border-radius: 5px;
+  background-color: #ffc800;
+  font-weight: 700;
+  margin: 76px 0 0;
+  opacity: 0.5;
+}
+#contact .btn h2 {
+  color: white;
+}
+
+footer {
+  padding: 40px 0;
+}
+footer h1 {
+  font-size: 17px;
+}
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer ul li {
+  margin: -7px 10px 5px;
+  border-radius: 50%;
+  background-color: #000000;
+  padding: 20px;
+  width: 10px;
+  height: 10px;
+}
+footer ul li .icon {
+  margin: -7px;
+  color: white;
+}
+footer h2 {
+  font-size: 17px;
+  padding: 0 36px 0 86px;
+}
+footer h3 {
+  font-size: 17px;
+}/*# sourceMappingURL=style.css.map */

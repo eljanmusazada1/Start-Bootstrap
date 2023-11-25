@@ -1,39 +1,60 @@
 #team
+    padding: 50px 0
+    background-color: #f8f9fa
+    h1
+        font-size: 50px
+        font-weight: 700
+    h3
+        font-size: 20px
+        color: #788194
+        margin: 20px 0 60px
+    .box
+        display: flex
+        justify-content: center
+        .imgbox
+            border: 8px solid #dfe0e1
+            border-radius: 50%
+            width: 230px
+            height: 230px
     .textbox
-        h1
-            font-size: 50px
-            font-weight: 700
-        h3
-            color: #6e7b89
-            font-size: 20px
-            padding: 11px 0 58px
+        text-align: center
         h2
             font-size: 30px
             font-weight: 700
-    .imgbox
-        margin: 35px 0
-        display: flex
-        justify-content: center
-        img
-            width: 221px
-            height: 215px
-            border-radius: 120px
-            border: 7px solid #e9ecef
+            margin-top: 20px
+        h4
+            font-size: 18px
+            color: #767f91
+            margin: 10px 0
     ul
         display: flex
-        flex-direction: row
         justify-content: center
+        flex-direction: row
         li
-            margin: -29px 10px 5px
-            border-radius: 50%
-            background-color: #000000
-            padding: 20px
-            width: 10px
-            height: 10px
-            .icon
-                margin: -7px
-                color: #ffff
-    h6
-        color: #6e7b89
-        font-size: 20px
-        margin: 45px 205px
+            background-color: #292d31
+            border-radius: 30px
+            color: #ffff
+            width: 40px
+            height: 40px
+            margin: 10px
+            display: flex
+            justify-content: center
+            align-items: center
+            &:hover
+                background-color: #424649
+                cursor: pointer
+    .wid
+        width: 750px
+        line-height: 1.4
+        margin-top: 15px
+
+    @media screen and ( max-width: 992px )
+        .box
+            .imgbox
+                height: auto
+
+    @media screen and ( max-width: 768px )
+        ul
+            margin-bottom: 40px
+        .wid
+            margin-top: 0
